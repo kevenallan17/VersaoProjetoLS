@@ -1,4 +1,4 @@
-const area = document.querySelector('.row')
+const area = document.querySelector('.linha')
 const ArmasList=[
     {
     "nome":"Mini 14",
@@ -360,10 +360,10 @@ const ArmasList=[
 function exibir(array){
     result=''
     for (i of array){
-        result+=`<div class="col-sm">
+        result+=`<div class="box-arma">
                     <h4 class="card-title">${i.nome}</h4>
                     <img id="${i.nome}"src="armas/${i.tipo}/${i.nome}.png">
-                    <button class="btn btn-primary bg-warning text-dark" value="${i.nome}" onclick="status_armas()">Status</button>
+                    <button class="btn btn-primary bg-warning text-dark position" value="${i.nome}" onclick="status_armas()">Status</button>
                 </div>`                     
     }
     area.innerHTML=result

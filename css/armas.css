@@ -98,16 +98,19 @@ main dl {
 img{
     width:200px;
 }
-.row{
-    display:flex;
-    flex-direction: row;
+.linha{
+    display: flex;
     flex-wrap: wrap;
-}
-/* .col-sm{
-    border:1px solid black;
+    justify-content: center;
     
-} */
-
+}
+.box-arma{
+    
+    width:400px;
+}
+.position{
+    margin-left: 10px;
+}
 @media all and (min-width:960px) {
     .menu ul {
         display:flex;
