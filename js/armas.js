@@ -1,8 +1,7 @@
 const area = document.querySelector('.row')
-
 const ArmasList=[
     {
-    "nome":"MINI 14",
+    "nome":"Mini 14",
     "tipo":"DMR",
     "dano":"44",
     "carregador":"20",	
@@ -30,7 +29,7 @@ const ArmasList=[
     "disponivel":"Todos os Mapas"
     },
     {
-    "nome":"KAR98",
+    "nome":"Kar98",
     "tipo":"Sniper",
     "dano":"72",
     "carregador":"5",
@@ -87,7 +86,7 @@ const ArmasList=[
     },
     
     {
-    "nome":"VECTOR",
+    "nome":"Vector",
     "tipo":"Submetralhadora",
     "dano":"31",
     "carregador":"19",
@@ -96,7 +95,7 @@ const ArmasList=[
     "disponivel":"Todos os Mapas"
     },
     {
-    "nome":"TOMMY GUN",
+    "nome":"Tommy Gun",
     "tipo":"Submetralhadora",
     "dano":"38",
     "carregador":"25",
@@ -105,7 +104,7 @@ const ArmasList=[
     "disponivel":"Todos os Mapas"        
     },
     {
-    "nome":"BISON",
+    "nome":"Bison",
     "tipo":"Submetralhadora",
     "dano":"35",
     "carregador":"53",
@@ -151,7 +150,7 @@ const ArmasList=[
     "disponivel":"Drop"
     },
     {
-    "nome":"CROSSBOW",
+    "nome":"Crossbow",
     "tipo":"Armas Especiais",
     "dano":"105",
     "carregador":"1",
@@ -188,7 +187,7 @@ const ArmasList=[
     "disponivel":"Sanhok/Miramar/Vikendi"
     },
     {
-    "nome":"DESERT EAGLE",
+    "nome":"Desert Eagle",
     "tipo":"Pistola",
     "dano":"62",
     "carregador":"7",
@@ -204,167 +203,91 @@ function exibir(array){
         result+=`<div class="col-sm">
                     <h4 class="card-title">${i.nome}</h4>
                     <img src="armas/${i.tipo}/${i.nome}.png">
-                    <button class="btn btn-primary bg-warning text-dark" value="${i.nome}">Status</button>
-                    <div id="${i.nome}" class="card-body status">   
-                        <div class="status1">
-                            <div>Dano:</div>                      
-                            <div class="progress"> 
-                                <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: ${i.dano}%" aria-valuenow="${i.dano}" aria-valuemin="0" aria-valuemax="100">${i.dano}%</div>
-                            </div> 
-                            Carregador: ${i.carregador}<br>Calibre: ${i.calibre}<br>Modo de Tiro: ${i.modo_de_tiro}<br>Disponivel em: ${i.disponivel}<br>Tipo: ${i.tipo}                           
-                        </div>
-                    </div>
+                    <button class="btn btn-primary bg-warning text-dark" value="${i.nome}" onclick="status_armas()">Status</button>
                 </div>`                     
     }
     area.innerHTML=result
 }
 
 exibir(ArmasList)
-/*
-result=''
-for (i of ArmasList){
-    result+=`<div class="col-sm">
-                <h4 class="card-title">${i.nome}</h4>
-                <img src="armas/${i.tipo}/${i.nome}.png">
-                <button class="btn btn-primary bg-warning text-dark" value="${i.nome}" onclick="exibir()">Status</button>
-                <div id="${i.nome}" class="card-body status">   
-                
-                </div>
-            </div>`                     
-}
-area.innerHTML=result
-*/
-
-const buttons = document.querySelectorAll('.btn')
-const AreaStatus = document.querySelectorAll('.status')
-
-for (i of AreaStatus){
-    i.style.display='none'
-}
-
-/*
-function exibir2(){         
-    for (i of buttons){
-        for (j of AreaStatus){
-            if(i.value==j.id){
-                if(j.style.display=='none'){ 
-                    j.style.display='inline'
-                }
-                else{
-                    j.style.display='none'
-                }    
-            }       
-        }
-    }         
-}
-*/
 
 
-for (i of buttons){
-    i.addEventListener('click',function(){
-        for(j of AreaStatus){
-            if(j.style.display=='none'){ 
-                j.style.display='inline'
-            }
-            else{
-                j.style.display='none'
-            }                                            
-        }
-    })
-}
 
 const BuscaNome = document.querySelector('#filter-nome')
-const BuscaTipo = document.querySelector('#filter-type')
-
-const tipos = ['Todos','DMR','Sniper','Rifle de Assalto','Submetralhadora','Escopeta','Armas Especiais','Pistola']
-
-result2=''
-
-for(i of tipos){
-    result2+=`<option value="${i}">${i}</option>`
-}
-BuscaTipo.innerHTML=result2
+const SelecionarTipo= document.querySelector('#filter-type')
 
 
-BuscaNome.addEventListener('keyup',function(){
-    if(BuscaNome==''){
-        exibir(ArmasList)
-    }
-    else{
-        for (i of AreaStatus){
-            i.style.display='none'
-        }
-        filtroNome=ArmasList.filter(a=> a.nome.includes(BuscaNome.value.toUpperCase()))   
-        if (BuscaTipo.value=='Todos'){
-            exibir(filtroNome)
-        }
-        /*
-        else{
-            filtroTipo=ArmasList.filter(a=>a.tipo.includes(BuscaTipo.value))
-            for(i of filtroTipo){
-                if(BuscaNome.value.includes(i.nome)){
-                    filtroNome2=ArmasList.filter(a=> a.nome.includes(BuscaNome.value.toUpperCase()))
-                    exibir(filtroNome2) 
-                }
-                
-            }
-            
-        }*/
-        /*
-        for (i of buttons){
-            i.addEventListener('click',function(){
-                for(j of AreaStatus){
-                    if(j.style.display=='none'){ 
-                        j.style.display='inline'
-                    }
-                    else{
-                        j.style.display='none'
-                    }                                            
-                }
-            })
-        }*/
-    }
-    if (event.key == 'Escape'){
-        BuscaNome.value=''
-        exibir(ArmasList)
-      }
-})
-
-/*
 BuscaNome.addEventListener('keyup',function(){
     if(BuscaNome.value==''){
-        exibir(ArmasList)
-    }
-    else if (BuscaTipo.value=='Todos'){
+        if (SelecionarTipo.value=='Todos'){
+            exibir(ArmasList)
+            
+        }else{
+            filter=ArmasList.filter(a=>a.tipo.includes(SelecionarTipo.value))
+            exibir(filter)
+            
+        }
+    }else if (SelecionarTipo.value=="Todos"){
         filter=ArmasList.filter(a=> a.nome.includes(BuscaNome.value))
         exibir(filter)
     }
     else{
         filter=ArmasList.filter(a=> a.nome.includes(BuscaNome.value))
-        filtro=filter.filter(a=>a.tipo.includes(BuscaTipo.value))
+        filtro=filter.filter(a=>a.tipo.includes(SelecionarTipo.value))
         exibir(filtro)
-}
+    }
     if (event.key == 'Escape'){
         BuscaNome.value=''
+        SelecionarTipo.value="Todos"
         exibir(ArmasList)
     }
 })
-*/
 
 
-
-
-BuscaTipo.addEventListener('click',function(){
-    if(BuscaTipo.value=='Todos'){
+SelecionarTipo.addEventListener('click',function(){
+    if (SelecionarTipo.value=="Todos"){
         exibir(ArmasList)
-    }
-    else{
-        filtroTipo=ArmasList.filter(a => a.tipo.includes(BuscaTipo.value))
-        exibir(filtroTipo)
-        //filtroTipo=ArmasList.filter(a=>a.tipo.includes(BuscaTipo.value))
-        //filtroName=filtroTipo.filter(b=> b.nome.includes(filtroTipo))
-        
-        //exibir(filtroName)
-            
+    }else{
+        const filtro=ArmasList.filter(arma=>arma.tipo.includes(SelecionarTipo.value))
+        exibir(filtro)
     }
 })
+
+// Exibir status
+
+const buttons = document.querySelectorAll('.btn')
+const box_status = document.querySelector('#box-status')
+const box = document.querySelector('.box')
+let status_arma=''
+
+function status_armas(){
+    for (let button of buttons){
+        button.addEventListener('click',function(){
+            for (arma of ArmasList){
+                if (button.value == arma.nome){
+                    status_arma=`<button onclick="fechar()" id="fechar-status" class="fechar">X</button>
+                                <h2>${arma.nome}</h2>
+                                
+                                <div style="display:flex;flex-direction:row">
+                                    <div><span style="font-weight:bolder;">Dano:</span></div>                      
+                                    <div class="progress" style="width:250px;margin-left:5px;margin-top:5px;"> 
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: ${i.dano}%" aria-valuenow="${i.dano}" aria-valuemin="0" aria-valuemax="100">${i.dano}%</div>
+                                    </div> 
+                                </div>
+                                <div class="status">Tipo da Arma:</span> ${arma.tipo}</div>
+                                <div class="status">Carregador:</span> ${arma.carregador}</div>
+                                <div class="status">Calibre:</span> ${arma.calibre}</div>
+                                <div class="status">Modo de Tiro:</span> ${arma.modo_de_tiro}</div>
+                                <div class="status">Mapas Disponíveis:</span> ${arma.disponivel}</div>`
+                    box.innerHTML=status_arma   
+                    box_status.classList.add('mostrar')
+                }
+            }
+        })
+    }
+}
+
+
+function fechar(){
+    box_status.classList.remove('mostrar')
+}

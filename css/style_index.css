@@ -37,7 +37,7 @@ body {
 }
 
 .menu {
-    
+    z-index: 1;
     position:sticky;
     top:1px;
 }
@@ -77,10 +77,6 @@ div.menu:hover {
     font-family: 'Raleway', sans-serif;
     margin-left:10px;
     margin-right: 10px
-}
-
-.comments{
-    padding: 5px;
 }
 
 .frame {
@@ -135,4 +131,9 @@ footer i {
         background-position-y: 15%;
         background-repeat: no-repeat;
     }
+}
+
+.user{
+    display:flex;
+    align-items:center;
 }

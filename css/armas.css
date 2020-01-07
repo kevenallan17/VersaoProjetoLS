@@ -5,29 +5,15 @@ body {
 
 /*============= INICIO DO MENU =================*/
 
-.menu {
-   
-    background-color: white;
-}
-
 .menu ul .pub {
     width: 100px;
     height: 50px;
-    margin-top: 5px;
+    margin-top: 5px;    
 }
 
-.menu li a:hover {
-    background-color:  rgb(229, 255, 0)
-}
-
-
-div.menu:hover {
-    opacity: 1;
-}
 #pubg {
     position: absolute;
-    left: 0;
-    animation: anim 1s linear infinite;
+    left:0
 }
 
 .menu ul {
@@ -38,21 +24,26 @@ div.menu:hover {
     justify-content: flex-end
 }
 
-.menu ul li {
-    display: inline;
-}
-
 .menu ul li a {
     padding: 15px 10px;
     display: inline-block;
-    font-size: 21px;
-    color: black
+    font-size: 23px;
+    color: black;
+    text-decoration: none
 }
 
-div.menu {
-    
-    
+.menu ul li a:hover {   
+    background-color: rgb(229, 255, 0)
+}
+
+.menu {
+    z-index: 1;
+    position:sticky;
     top:1px;
+}
+
+div.menu:hover {
+    opacity: 1;
 }
 
 .menu i {
@@ -70,20 +61,6 @@ div.menu {
 }
 
 /*============= FIM DO MENU =================*/
-
-.status1 {
-    font-family: 'Raleway', sans-serif;
-    width: 400px;
-    height: auto;
-    background: #808080;
-    color: #FFF;
-    margin-left: 20px;
-    padding: 20px;
-    border: 5px solid rgb(54,54,54);
-    border-radius: 15px;
-    box-shadow: inset 0 0 1em rgb(5, 5, 5), 0 0 1em yellow
-}
-
 main img {
     width: 400px;
 }
@@ -229,4 +206,44 @@ h1 i {
 .navbar{
     display: flex;
     justify-content: center!important;
+}
+
+ .status{
+    font-weight:bolder;
+    margin-top:10px;
+}
+ /* MODAL */
+.box-container{
+    width:100vw;
+    height:100vw;
+    position:fixed;
+    background:rgba(0, 0, 0, 0.5);
+    top:0px;
+    left:0px;
+    z-index:2000;
+    display:none;
+    justify-content: center;
+    align-items:center;
+}
+.mostrar{
+    display:flex;
+}
+.box{
+    
+    margin-top:-700px;
+    background: white;
+    width:450px;
+    height:350px;
+    padding:40px;
+    border:5px solid black;
+    box-shadow:0 0 0 5px yellow;
+    position: relative;
+}
+.fechar{
+    font-weight: bolder;
+    background:white;
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:30px;
 }
