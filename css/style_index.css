@@ -137,3 +137,6 @@ footer i {
     display:flex;
     align-items:center;
 }
+.comments{
+    padding: 5px;
+}

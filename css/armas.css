@@ -61,9 +61,6 @@ div.menu:hover {
 }
 
 /*============= FIM DO MENU =================*/
-main img {
-    width: 400px;
-}
 
 /*============= INICIO DO SUMARIO =================*/
 
@@ -79,26 +76,11 @@ main dl {
     background-position-x: 60%;
 }
 
-.sumario ul {
-    margin-bottom:80px;
-}
-
-.sumario dl li a:visited,a:link  {
-    color: whitesmoke;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.sumario dl li a:hover {
-    color: yellow;
-}
-
+/* TITULO - TIPOS DE ARMAS */
 .sumario dl ul {
     display: flex;
     justify-content: center;
 }
-
 .sumario dl ul h1 {
     color: black;
     text-align: center;
@@ -112,82 +94,27 @@ main dl {
     margin-top: 50px;
 }
 
-.sumario dl li {
-    margin-left: 10px
-}
-
-/*============= FIM DO SUMARIO =================*/
-
-h1 {
-    margin-left: 30px;
-    
-}
-
-
-.center {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-left: 70px;
-    margin-bottom: 50px;
-}
-
-.center div {
-    margin-right: 70px;
-}
-
-.vector img {
-    margin-bottom:12px;
-}
-
-.s686 img {
-    margin-bottom:19px;
-}
-
-.p92 img {
-    margin-bottom:20px;
-}
-
-.smoke img {
-    margin-bottom:19px;
-}
-
-#desert {
-    width:300px;
-}
-.ex img {
+/*================== ARMAS ===================*/
+img{
     width:200px;
-    margin-left: 100px;
 }
-.corpo img {
-    width:500px;
+.row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-
-h1 i {
-    color:black;
-}
+/* .col-sm{
+    border:1px solid black;
+    
+} */
 
 @media all and (min-width:960px) {
     .menu ul {
         display:flex;
         justify-content: space-around;
     }
-    .sumario {
-        height:200px;
-    }
-    dl li {
-        margin-bottom: 10px;
-    }
 }
 
-@media all and (min-width:1020px) {
-    .sumario {
-        height: 200px;
-    }
-    dl li {
-        margin-bottom: 20px;
-    }
-}
 
 .nome, .tipo{
     display: flex;
@@ -229,7 +156,6 @@ h1 i {
     display:flex;
 }
 .box{
-    
     margin-top:-700px;
     background: white;
     width:450px;

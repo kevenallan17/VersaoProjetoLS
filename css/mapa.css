@@ -39,7 +39,7 @@ body {
 }
 
 div.menu {
-    
+    z-index: 1;
     position:sticky;
     top:1px;
 }

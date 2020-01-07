@@ -29,6 +29,33 @@ const ArmasList=[
     "disponivel":"Todos os Mapas"
     },
     {
+    "nome":"QBU",
+    "tipo":"DMR",
+    "dano":"48",
+    "carregador":"10",
+    "calibre":"5.56 mm",
+    "modo_de_tiro":"Semi",
+    "disponivel":"Apenas Sanhok"
+    },
+    {
+    "nome":"VSS",
+    "tipo":"DMR",
+    "dano":"38",
+    "carregador":"10",
+    "calibre":"9 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"MK14",
+    "tipo":"DMR",
+    "dano":"60",
+    "carregador":"10",
+    "calibre":"7.62 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Drop"
+    },
+    {
     "nome":"Kar98",
     "tipo":"Sniper",
     "dano":"72",
@@ -46,7 +73,6 @@ const ArmasList=[
     "modo_de_tiro":"Semi",
     "disponivel":"Todos os Mapas"
     },
-    
     {
     "nome":"AWM",
     "tipo":"Sniper",
@@ -55,6 +81,15 @@ const ArmasList=[
     "calibre":".300 w. Magnum",
     "modo_de_tiro":"Semi",
     "disponivel":"Drop"
+    },
+    {
+    "nome":"Win94",
+    "tipo":"Sniper",
+    "dano":"65",
+    "carregador":"8",
+    "calibre":".45 ACP",
+    "modo_de_tiro":"Semi",
+    "disponivel":"Miramar"
     },
     {
     "nome":"AKM",
@@ -84,7 +119,69 @@ const ArmasList=[
     "modo_de_tiro":"Auto/Semi",
     "disponivel":"Drop"
     },
-    
+    {
+    "nome":"M16A4",
+    "tipo":"Rifle de Assalto",
+    "dano":"41",
+    "carregador":"30",
+    "calibre":"5.56 mm",
+    "modo_de_tiro":"Burst/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"Scar-L",
+    "tipo":"Rifle de Assalto",
+    "dano":"41",
+    "carregador":"30",
+    "calibre":"5.56 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"G36C",
+    "tipo":"Rifle de Assalto",
+    "dano":"41",
+    "carregador":"30",
+    "calibre":"5.56 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Apenas Vikendi"
+    },
+    {
+    "nome":"Groza",
+    "tipo":"Rifle de Assalto",
+    "dano":"48",
+    "carregador":"30",
+    "calibre":"7.62 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Drop"
+    },
+    {
+    "nome":"QBZ",
+    "tipo":"Rifle de Assalto",
+    "dano":"43",
+    "carregador":"30",
+    "calibre":"5.56 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Apenas Sanhok"
+    },
+    {
+    "nome":"Beryl M762",
+    "tipo":"Rifle de Assalto",
+    "dano":"46",
+    "carregador":"30",
+    "calibre":"7.62 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"MK47 Mutant",
+    "tipo":"Rifle de Assalto",
+    "dano":"48",
+    "carregador":"20",
+    "calibre":"7.62 mm",
+    "modo_de_tiro":"Burst/Semi",
+    "disponivel":"Todos os Mapas"
+    },
     {
     "nome":"Vector",
     "tipo":"Submetralhadora",
@@ -112,7 +209,24 @@ const ArmasList=[
     "modo_de_tiro":"Auto/Semi",
     "disponivel":"Apenas Vikendi"
     },
-    
+    {
+    "nome":"Ump45",
+    "tipo":"Submetralhadora",
+    "dano":"35",
+    "carregador":"35",
+    "calibre":".45 ACP",
+    "modo_de_tiro":"Auto/Bust/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"Micro Uzi",
+    "tipo":"Submetralhadora",
+    "dano":"23",
+    "carregador":"25",
+    "calibre":"9 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Todos os Mapas"
+    },
     {
     "nome":"S686",
     "tipo":"Escopeta",
@@ -123,7 +237,7 @@ const ArmasList=[
     "disponivel":"Todos os Mapas"
     },
     {
-    "nome":"S1987",
+    "nome":"S1897",
     "tipo":"Escopeta",
     "dano":"25",
     "carregador":"5",
@@ -139,6 +253,15 @@ const ArmasList=[
     "calibre":"12",
     "modo_de_tiro":"Semi",
     "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"DBS",
+    "tipo":"Escopeta",
+    "dano":"25",
+    "carregador":"12",
+    "calibre":"12",
+    "modo_de_tiro":"Semi",
+    "disponivel":"Drop"
     },
     {
     "nome":"M249",
@@ -194,7 +317,44 @@ const ArmasList=[
     "calibre":".45 ACP",
     "modo_de_tiro":"Semi",
     "disponivel":"Todos os Mapas"
-    }
+    },
+    {
+    "nome":"R1895",
+    "tipo":"Pistola",
+    "dano":"46",
+    "carregador":"7",
+    "calibre":"7.62 mm",
+    "modo_de_tiro":"Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"P18C",
+    "tipo":"Pistola",
+    "dano":"19",
+    "carregador":"17",
+    "calibre":"9 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"P1911",
+    "tipo":"Pistola",
+    "dano":"35",
+    "carregador":"15",
+    "calibre":".45 ACP",
+    "modo_de_tiro":"Semi",
+    "disponivel":"Todos os Mapas"
+    },
+    {
+    "nome":"Skorpion",
+    "tipo":"Pistola",
+    "dano":"22",
+    "carregador":"20",
+    "calibre":"9 mm",
+    "modo_de_tiro":"Auto/Semi",
+    "disponivel":"Todos os Mapas"
+    },
+
 ]
 
 function exibir(array){
@@ -202,7 +362,7 @@ function exibir(array){
     for (i of array){
         result+=`<div class="col-sm">
                     <h4 class="card-title">${i.nome}</h4>
-                    <img src="armas/${i.tipo}/${i.nome}.png">
+                    <img id="${i.nome}"src="armas/${i.tipo}/${i.nome}.png">
                     <button class="btn btn-primary bg-warning text-dark" value="${i.nome}" onclick="status_armas()">Status</button>
                 </div>`                     
     }
@@ -271,14 +431,14 @@ function status_armas(){
                                 <div style="display:flex;flex-direction:row">
                                     <div><span style="font-weight:bolder;">Dano:</span></div>                      
                                     <div class="progress" style="width:250px;margin-left:5px;margin-top:5px;"> 
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: ${i.dano}%" aria-valuenow="${i.dano}" aria-valuemin="0" aria-valuemax="100">${i.dano}%</div>
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: ${arma.dano}%" aria-valuenow="${arma.dano}" aria-valuemin="0" aria-valuemax="100">${arma.dano}</div>
                                     </div> 
                                 </div>
-                                <div class="status">Tipo da Arma:</span> ${arma.tipo}</div>
-                                <div class="status">Carregador:</span> ${arma.carregador}</div>
-                                <div class="status">Calibre:</span> ${arma.calibre}</div>
-                                <div class="status">Modo de Tiro:</span> ${arma.modo_de_tiro}</div>
-                                <div class="status">Mapas Disponíveis:</span> ${arma.disponivel}</div>`
+                                <div class="status">Tipo da Arma: ${arma.tipo}</div>
+                                <div class="status">Carregador: ${arma.carregador}</div>
+                                <div class="status">Calibre: ${arma.calibre}</div>
+                                <div class="status">Modo de Tiro:${arma.modo_de_tiro}</div>
+                                <div class="status">Mapas Disponíveis:${arma.disponivel}</div>`
                     box.innerHTML=status_arma   
                     box_status.classList.add('mostrar')
                 }
