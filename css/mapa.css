@@ -39,7 +39,7 @@ body {
 }
 
 div.menu {
-    opacity: 0.3;
+    
     position:sticky;
     top:1px;
 }
@@ -64,7 +64,7 @@ div.menu:hover {
 /*============= FIM DO MENU =================*/
 
 
-h2 {
+h3 {
     text-align: center;
     font-family: 'Indie Flower', cursive;
     color: black;
@@ -75,9 +75,9 @@ h2 {
     width: 150px;
     margin-left: 150px;
     margin-right: 100px;
-  
+    
 }
-
+/*
 div .mapa {
     width: 350px;
     margin-left: 40px;
@@ -101,11 +101,12 @@ main div:hover {
     transform:scale(1.2)
 }
 
+
 main div:hover {
     transition: transform 1s;
     will-change: scale;
 }
-
+*/
 @media all and (min-width:960px) {
     .menu ul {
         display:flex;
@@ -124,6 +125,18 @@ main div:hover {
     }
     .miramar {
         grid-row:1/2;
-        grid-columns:2/3
+        grid-column:2/3
     }
 }   
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.img-responsive {
+    margin: 0 auto;
+}

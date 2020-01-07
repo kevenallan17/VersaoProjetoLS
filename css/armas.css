@@ -70,10 +70,8 @@ div.menu {
 }
 
 /*============= FIM DO MENU =================*/
-.hidden{
-    display:none
-}
-.status {
+
+.status1 {
     font-family: 'Raleway', sans-serif;
     width: 400px;
     height: auto;

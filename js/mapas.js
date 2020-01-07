@@ -18,6 +18,7 @@ const mapas = [
     
 ]
 
+/*
 const mapaArea = document.querySelector('main')
 result=''
 for (i of mapas){
@@ -28,3 +29,4 @@ for (i of mapas){
 }
 
 mapaArea.innerHTML=result
+*/

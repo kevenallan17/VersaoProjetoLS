@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,52 +18,48 @@
                     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
                     <li><a href="mapas.html"><i class="fas fa-map"></i> Mapas</a></li>
                     <li><a href="armas.html"><i class="fas fa-crosshairs"></i> Armas</a></li>
-                    <li><a href="login.html"><i class="fas fa-user-circle"></i> Login</a></li>
+                    <li><a href="login.html"><i class="fas fa-user-circle"></i>Cadastro</a></li>
                 </ul>    
             </nav>
         </div>
     <main>
-        <div class="sumario" id="sumario">
-            <dl>
-                <ul><h1>Tipos de Armas</h1></ul>         
-            </dl>
-            </div>
-                <div>
-                    <div class="card text-center">
-                        <div class="card-header"></div>                      
-                        <div class="card-body">
-                          <nav class="navbar navbar-light bg-light">
-                            <form class="form-inline">
-                                <div class="nome">
-                                    <h5>Nome:</h5>
-                                    <input class="form-control mr-sm-2" id="filter-nome" type="search" aria-label="Nome">
-                                </div>
-                                <div class="tipo">
-                                    <h5>Tipo:</h5>
-                                    <select id="filter-type">
-                                        <option value="Todos">Todos</option>
-                                        <option value="DMR">DMR</option>
-                                        <option value="Sniper">Sniper</option>
-                                        <option value="Rifle de Assalto">Rifle de Assalto</option>
-                                        <option value="Submetralhadora">Submetralhadora</option>
-                                        <option value="Escopeta">Escopeta</option>
-                                        <option value="Armas Especiais">Armas Especiais</option>
-                                        <option value="Pistola">Pistola</option>
-                                    </select>
-                                </div>
-                            </form>
-                          </nav>
-                        </div>
-                      </div>   
-        <div class="container">  
-            <div class="row">
-               
-            </div>      
-        </div>    
+    <div class="sumario" id="sumario">
+    <dl>
+        <ul><h1>Tipos de Armas</h1></ul>         
+    </dl>
     </div>
+        <div>
+            <div class="card text-center">
+                <div class="card-header"></div>                      
+                <div class="card-body">
+                  <nav class="navbar navbar-light bg-light">
+                    <form class="form-inline">
+                        <div class="nome">
+                            <h5>Nome:</h5>
+                            <input class="form-control mr-sm-2" id="filter-nome" type="search" aria-label="Nome">
+                        </div>
+                        <div class="tipo">
+                            <h5>Tipo:</h5>
+                            <select id="filter-type">
 
+                            </select>
+                        </div>
+                        
+                        
+                    </form>
+                  </nav>
+                 <!-- <button class="btn btn-primary bg-warning text-dark" value="${i.nome}">Status das Armas</button> -->
+                </div>
+              </div>         
+            <div class="container">     
+                <h2 class="center"></h2>     
+                <div class="row">
+                    
+                </div>
+            </div>
+            
+        </div>               
     </main>
-    <script src="js/jsons/json.js"></script>
     <script src="js/armas.js"></script>
     
 </body>

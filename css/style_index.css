@@ -37,7 +37,7 @@ body {
 }
 
 .menu {
-    opacity: 0.3;
+    
     position:sticky;
     top:1px;
 }
@@ -77,6 +77,10 @@ div.menu:hover {
     font-family: 'Raleway', sans-serif;
     margin-left:10px;
     margin-right: 10px
+}
+
+.comments{
+    padding: 5px;
 }
 
 .frame {
