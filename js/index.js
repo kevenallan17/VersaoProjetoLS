@@ -8,6 +8,10 @@ function getCEP(url,nome,comentario) {
       .then(json => showContent(json,nome,comentario))
 }
 function showContent(cep,nome,comentario) {
+    if (cep.erro){
+        cep.localidade='Local Indefinido'
+    }
+
     result+=`<div class="comments">
                 <div class="card w-100 bg-secondary">
                     <div class="card-body">
@@ -20,6 +24,19 @@ function showContent(cep,nome,comentario) {
             comentario.value=''
 }
 
+function notCEP(nome,comentario){
+    cidade='Local Indefinido'
+    result+=`<div class="comments">
+        <div class="card w-100 bg-secondary">
+            <div class="card-body">
+                <h5 class="card-title user"><i class="material-icons">person</i>${nome} - ${cidade}</h5>
+                <p class="card-text">${comentario}</p>
+        </div>
+        </div>
+    </div>`
+    commentArea.innerHTML=result        
+    comentario.value=''
+}
 let result=''
 submit.addEventListener('click',function(){
     let nome_comment=window.prompt('Informe seu nome: ')
@@ -30,25 +47,32 @@ submit.addEventListener('click',function(){
     else if (nome_comment==null){
         comentario.value=''
     }else{
-        let cep_commet=window.prompt('Informe seu CEP: ','Opcional')
-        let cidade
-        if (cep_commet==null){
+        let cep_comment=window.prompt('Informe seu CEP: ','"00000000" (Opcional)')
+        if (cep_comment==null){
             comentario.value=''
             
-        }else if (cep_commet=='' || cep_commet=='Opcional'){
-            cidade='Local Indefinido'
-            result+=`<div class="comments">
-                <div class="card w-100 bg-secondary">
-                    <div class="card-body">
-                        <h5 class="card-title user"><i class="material-icons">person</i>${nome_comment} - ${cidade}</h5>
-                        <p class="card-text">${comentario.value}</p>
-                </div>
-                </div>
-            </div>`
-            commentArea.innerHTML=result        
-            comentario.value=''
+        }else if (cep_comment=='' || cep_comment=='"00000000" (Opcional)'){
+            notCEP(nome_comment,comentario.value)
         }else{
-            cidade=getCEP(`https://viacep.com.br/ws/${cep_commet}/json/`,nome_comment,comentario.value)
+            let notcep='false'
+            var regExp=/\d{8}/
+            while (true){
+                if (regExp.test(cep_comment)){
+                    cidade=getCEP(`https://viacep.com.br/ws/${cep_comment}/json/`,nome_comment,comentario.value)
+                    break
+                }else if (cep_comment=='' || cep_comment=='"00000000" (Opcional)'){
+                    notCEP(nome_comment,comentario.value)
+                    break
+                }else if (cep_comment==null){
+                    comentario.value=''
+                    break
+                }
+                window.alert('Cep invalido')
+                cep_comment=window.prompt('CEP:','"00000000" (Opcional)')
+            }
+            
+                
+            
         }
     } 
 })
