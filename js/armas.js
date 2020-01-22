@@ -48,5 +48,4 @@ const buttons = document.querySelectorAll('.btn')
 const box_status = document.querySelector('#box-status')
 const box = document.querySelector('.box')
 const background= document.querySelector('.container-armas')
-let status_arma=''
 
