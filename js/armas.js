@@ -1,11 +1,10 @@
 const area = document.querySelector('.linha')
-
-exibir(ArmasList)
-
-
 const BuscaNome = document.querySelector('#filter-nome')
 const SelecionarTipo= document.querySelector('#filter-type')
 
+exibir(ArmasList)
+
+//Buscar arma por nome
 BuscaNome.addEventListener('keyup',function(){
     if(BuscaNome.value==''){
         if (SelecionarTipo.value=='Todos'){
@@ -32,7 +31,7 @@ BuscaNome.addEventListener('keyup',function(){
     }
 })
 
-
+//Filtrar armas por tipo
 SelecionarTipo.addEventListener('click',function(){
     if (SelecionarTipo.value=="Todos"){
         exibir(ArmasList)
@@ -43,7 +42,6 @@ SelecionarTipo.addEventListener('click',function(){
 })
 
 // Exibir status
-
 const buttons = document.querySelectorAll('.btn')
 const box_status = document.querySelector('#box-status')
 const box = document.querySelector('.box')

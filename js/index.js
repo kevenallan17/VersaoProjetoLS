@@ -3,7 +3,6 @@ const comentario = document.querySelector('textarea')
 const submit = document.querySelector('.submit')
 let result=''
 
-
 submit.addEventListener('click',function(){
     let nome_comment=window.prompt('Informe seu nome: ')
     
@@ -40,29 +39,3 @@ submit.addEventListener('click',function(){
         }
     } 
  })
-
-        
-
-
-    
-
-
-
-//         else{
-//             const regex=/\d{8}/
-//             if (cep_comment.length!=8){
-//                 window.alert('Tamanho do CEP Incorreto!')
-//                 comentario.value=''
-//             }
-//             else if(regex.test(cep_comment)){
-//                 cidade=getCEP(`https://viacep.com.br/ws/${cep_comment}/json/`,nome_comment,comentario)
-//             }
-//             else{
-//                 window.alert('CEP Inválido!')
-//                 comentario.value=''
-//             }
-            
-            
-//         }
-//     } 
-// })
