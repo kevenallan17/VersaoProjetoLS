@@ -61,43 +61,31 @@ div.menu:hover {
 }
 
 #logo {
-    height: 300px;
+    height: 250px;
     background-image: url(../img/pubgnav.jpeg);
     background-attachment: fixed;
     background-size: contain;
     background-position-y: 15%;
     background-repeat: no-repeat;
 }
-
 /*============= FIM DO MENU =================*/
-.game{
-    display:flex;
-}
+
 #title-text{
     padding-top:15px;
     padding-left: 5px;
 }
-#fp{
-    margin-top:-40px;
-}
-.texto{
-    width:50%;
+.video{
+    display:flex;
+    justify-content: center;
 }
 #video{
-    padding-top:50px;
-    padding-left:50px;
-    width:600px;
+    width:450px;
+    height:300px; 
 }
 
 .texto {
     font-family: 'Raleway', sans-serif;
     margin-left:10px;
-    margin-right: 10px
-}
-
-.frame {
-    display:flex;
-    justify-content: center;
 }
 
 footer {
@@ -121,13 +109,22 @@ footer i {
     color: yellow
 }
 
-@media all and (min-width:960px){
+@media all and (min-width:950px){
     main {
         display:flex;
     }
-    iframe {
-        margin-top:35px;
-        margin-right:10px;
+    #logo {
+        height: 380px;
+        background-image: url(../img/pubgnav.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position-y: 15%;
+        background-repeat: no-repeat;
+    }
+    #video {
+        margin-top:65px;
+        height:400px;
+        width:600px;
     }
     .menu ul {
         display:flex;
@@ -138,15 +135,33 @@ footer i {
 
 @media all and (min-width:1020px){
     #logo {
-        height: 400px;
         background-image: url(../img/pubgnav.jpeg);
         background-attachment: fixed;
         background-size: cover;
         background-position-y: 15%;
         background-repeat: no-repeat;
     }
+    .game{
+        display:flex;
+    }
+    
+    .texto{
+        width:50%;
+    }
+    #video {
+        height: 350px;
+        width:500px;
+        margin-left:0px;
+        
+    }
 }
 
+@media all and (min-width:1300px){
+    #video{
+        height: 420px;
+        width:630px;
+    }
+}
 .user{
     display:flex;
     align-items:center;
