@@ -26,7 +26,7 @@
     </div>
     
     <main>
-        <h5 id="title-text"><strong>SOBRE ESTE JOGO</strong></h5>
+        <h5 id="title-text" style="padding-left:10px;"><strong>SOBRE ESTE JOGO</strong></h5>
         <hr>
         <div class="game">
             <div class="texto">
@@ -48,13 +48,16 @@
             </div>   
         </div>
             
-        <h5 style="padding-bottom: 5px;"><strong>Armas</strong></h5>
+        <h5 style="padding-left:10px;"><strong>Armas</strong></h5>
         <hr>
             <div class="container">
                 <div class="row">
                 <div class="col-sm">         
-                    <div class="arma">
-                        <h5><strong>AWM</strong></h5>
+                    <div class="arma" onmouseenter="entrar('AWM')" onmouseleave="sair('AWM')" >
+                        <div style="display:flex;justify-content:space-between;">
+                            <h5><strong>AWM</strong></h5>
+                            <div id="AWM" style="display:none"><a class="btn btn-warning" href="armas.html" role="button">Ver status</a></div>
+                        </div>
                         <img src="armas/Sniper/AWM.png" style="width: 150px; height: 150px;" class="rounded float-left" alt="...">
                         <hr>
                         <p>Monstruosa, essa sniper pode torná-lo no rei da partida. Usando um tipo de bala especialmente criado para ela, 
@@ -64,8 +67,11 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="arma">
-                        <h5><strong>M416</strong></h5>
+                    <div class="arma" onmouseenter="entrar('M416')" onmouseleave="sair('M416')">
+                        <div style="display:flex;justify-content:space-between;">
+                            <h5><strong>M416</strong></h5>
+                            <div id="M416" style="display:none"><a class="btn btn-warning" href="armas.html" role="button">Ver status</a></div>
+                        </div>
                         <img src="armas/Rifle de Assalto/M416.png" style="width: 150px; height: 150px;" class="rounded float-left" alt="...">
                         <hr>
                         <p>Provavelmente a arma mais versátil de PUBG e a favorita de muitos jogadores. O seu fogo automático é super rápido, 
@@ -74,8 +80,11 @@
                     </div>
                 </div>
                 <div class="col-sm">
-                    <div class="arma">
-                        <h5><strong>DBS</strong></h5>
+                    <div class="arma" onmouseenter="entrar('DBS')" onmouseleave="sair('DBS')">
+                        <div style="display:flex;justify-content:space-between;">
+                            <h5><strong>DBS</strong></h5>
+                            <div id="DBS" style="display:none"><a class="btn btn-warning" href="armas.html" role="button">Ver status</a></div>
+                        </div>
                         <img src="armas/Escopeta/DBS.png" style="width: 150px; height: 150px;" class="rounded float-left" alt="...">
                         <hr>
                         <p>Uma espingarda de estilo bullpup que pode conter até 14 cartuchos de letalidade 12 Gauge, tem de longe o maior potencial de dano de qualquer espingarda disponível no jogo, compensada pelo fato de que recarregar tantas cartuchas levará um tempo obsceno. O DBS tem um método exclusivo de disparar, pois a bomba é empilhada após cada dois disparos, compartimentando os próximos dois.</p>
@@ -84,7 +93,7 @@
             </div>
         </div>
 
-        <h5 style="padding-top: 20px;"><strong>Notas de Atualização</strong></h5>
+        <h5 style="padding-top:20px;padding-left:10px;"><strong>Notas de Atualização</strong></h5>
         <hr>
         <h5 class="att">Atualização 6.1 - 14 de janeiro de 2020</h5>
         <div class="card border-dark bg-secondary-light att">
@@ -106,8 +115,16 @@
                 -Arrumamos um problema onde um jogador desconectado podia flutuar quanto entrava em contato com um outro personagem deitado
             </div>
         </div>
+        <h5 class="att" style="padding-top:10px;">Atualização 4.1 - 14 de janeiro de 2019</h5>
+        <div class="card border-dark bg-secondary-light att">
+            <div class="card-body" style="display:flex;">
+                <div>-<strong>Vikendi</strong> é um mapa 6×6, tendo uma jogabilidade mais acelerada que os dois primeiro mapas, Erangel e Miramar (8×8), porém mais lenta que o Sanhok (4×4), o último mapa a ser lançado até então. Possuindo uma característica única, os jogadores deixam rastros na neve por onde passam.
+                <br>-Outra novidade que chegou exclusivamente para o mapa é a <strong>arma G36C</strong>, utilizando munição de 5,56mm.</div>
+            </div>
+        </div>
+        
 
-        <h5 style="margin-top:20px;"><strong>COMENTÁRIOS</strong></h5>
+        <h5 style="margin-top:20px;padding-left:10px;"><strong>COMENTÁRIOS</strong></h5>
         <hr>
         <div class="comments">
             <div class="card w-100 bg-secondary">

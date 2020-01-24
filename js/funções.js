@@ -20,6 +20,15 @@ function showContent(cep,nome,comentario) {
             comentario.value=''
 }
 
+function entrar(arma){
+    const ar=document.querySelector(`#${arma}`)
+    ar.style.display='flex'
+}
+function sair(arma){
+    const ar=document.querySelector(`#${arma}`)
+    ar.style.display='none'
+}
+
 //                           ARMAS
 function exibir(array){
     result=''
@@ -55,8 +64,6 @@ function status_armas(nome_da_arma){
         }
     }
 }
-
-
 function fechar(){
     box_status.classList.remove('mostrar')
 }
